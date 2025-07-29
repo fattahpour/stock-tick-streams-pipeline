@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "StockTick",
+  "namespace": "studio.goodlabs.examples.avros",
+  "fields": [
+    { "name": "instrumentId", "type": [ "null", "string" ], "default": null },
+    { "name": "price", "type": [ "null", "double" ], "default": null },
+    { "name": "currency", "type": [ "null", "string" ], "default": null },
+    { "name": "mic", "type": [ "null", "string" ], "default": null },
+    { "name": "marketSector", "type": [ "null", "string" ], "default": null },
+    { "name": "timestamp", "type": [ "null", { "type": "long", "logicalType": "timestamp-millis" } ], "default": null }
+  ]
+}

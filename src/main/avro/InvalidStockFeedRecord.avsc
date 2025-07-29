@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "InvalidStockFeedRecord",
+  "namespace": "studio.goodlabs.examples.avros",
+  "fields": [
+    { "name": "tick", "type": [ "null", "studio.goodlabs.examples.avros.StockTick" ], "default": null },
+    { "name": "errorCode", "type": [ "null", "string" ], "default": null },
+    { "name": "errorMessage", "type": [ "null", "string" ], "default": null }
+  ]
+}

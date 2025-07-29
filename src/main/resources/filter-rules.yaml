@@ -1,0 +1,10 @@
+filterRules:
+  - mic: "XNAS"
+    marketSector: "Technology"
+  - mic: "XLON"
+  - marketSector: "Energy"
+    tickerPattern: "^BP.*"
+  - tickerPattern: "^TSLA$"
+  - mic: "XETR"
+    marketSector: "Consumer"
+  - tickerPattern: "^AAPL|MSFT$"

@@ -1,0 +1,17 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Set root to DEBUG to see all logs, or INFO for less output -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!-- Optional: Make Kafka Streams and Kafka client DEBUG level -->
+    <logger name="org.apache.kafka" level="DEBUG"/>
+    <logger name="org.apache.kafka.streams" level="DEBUG"/>
+    <logger name="com.example" level="DEBUG"/>
+</configuration>
